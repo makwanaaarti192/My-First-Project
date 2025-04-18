@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PNR Status - Railway System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Railway managment system</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="booking.html">Book Ticket</a>
+            <a href="schedule.html">Schedule</a>
+            <a href="pnr.html" class="active">PNR Status</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Check PNR Status</h2>
+        <div class="pnr-form">
+            <input type="text" id="pnrInput" placeholder="Enter PNR Number">
+            <button id="checkPnr" class="btn">Check Status</button>
+        </div>
+        
+        <div id="pnrResult" class="hidden">
+            <h3>PNR: <span id="pnrNumber"></span></h3>
+            <p>Train: <span id="trainInfo"></span></p>
+            <p>Status: <span id="statusInfo">Confirmed</span></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Railway System. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

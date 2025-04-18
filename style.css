@@ -1,0 +1,222 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #0056b3;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+nav a.active, nav a:hover {
+    background: #003d7a;
+}
+
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 7rem;
+}
+
+.btn {
+    display: inline-block;
+    background: #0056b3;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #003d7a;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Home Page */
+.hero {
+    background: #0077cc;
+    color: white;
+    padding: 12rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    background-image: url(railway.png);
+}
+
+.hero h2 {
+    margin-bottom: 1rem;
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.feature {
+    background: white;
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    flex: 1;
+    min-width: 200px;
+}
+
+/* Booking Page */
+#bookingForm {
+    background: white;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#bookingForm div {
+    margin-bottom: 1rem;
+}
+
+#bookingForm label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+#bookingForm input, #bookingForm select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+#trainResults {
+    margin-top: 2rem;
+}
+
+/* Schedule Page */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+th, td {
+    padding: 0.8rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background: #0056b3;
+    color: white;
+}
+
+/* PNR Page */
+.pnr-form {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+#pnrInput {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 3px 0 0 3px;
+    width: 200px;
+}
+
+#checkPnr {
+    border-radius: 0 3px 3px 0;
+}
+
+#pnrResult {
+    background: white;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Contact Page */
+#contactForm {
+    background: white;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#contactForm div {
+    margin-bottom: 1rem;
+}
+
+#contactForm label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+#contactForm input, #contactForm textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+#contactForm textarea {
+    height: 100px;
+}
+
+#thankYou {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+    nav a {
+        margin: 5px 0;
+    }
+}

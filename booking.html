@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Ticket - Railway System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Railway managment system</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="booking.html" class="active">Book Ticket</a>
+            <a href="schedule.html">Schedule</a>
+            <a href="pnr.html">PNR Status</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Book Your Ticket</h2>
+        <form id="bookingForm">
+            <div>
+                <label for="from">From:</label>
+                <input type="text" id="from" required>
+            </div>
+            <div>
+                <label for="to">To:</label>
+                <input type="text" id="to" required>
+            </div>
+            <div>
+                <label for="date">Date:</label>
+                <input type="date" id="date" required>
+            </div>
+            <div>
+                <label for="class">Class:</label>
+                <select id="class" required>
+                    <option value="">Select Class</option>
+                    <option value="SL">Sleeper</option>
+                    <option value="3A">AC 3 Tier</option>
+                    <option value="2A">AC 2 Tier</option>
+                </select>
+            </div>
+            <button type="submit" class="btn">Search Trains</button>
+        </form>
+
+        <div id="trainResults" class="hidden">
+            <h3>Available Trains</h3>
+            <div id="trainsList"></div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Railway System. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

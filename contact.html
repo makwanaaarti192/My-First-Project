@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Railway System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Railway managment system</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="booking.html">Book Ticket</a>
+            <a href="schedule.html">Schedule</a>
+            <a href="pnr.html">PNR Status</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+            </div>
+            <div>
+                <label for="message">Message:</label>
+                <textarea id="message" required></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+        
+        <div id="thankYou" class="hidden">
+            <h3>Thank You!</h3>
+            <p>Your message has been sent successfully.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Railway System. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
